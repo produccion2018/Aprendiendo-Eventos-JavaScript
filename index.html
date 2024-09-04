@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Clase-especial-Aprendiendo-Dom</title>
+</head>
+
+<body>
+    <header id="header">
+
+    </header>
+
+    <main id="miMain">
+       
+        <h1 id="titulo"> Comision # 59950</h1>
+        <div class="botonera">
+        <!-- input -->
+         <input class="button_grey" id="eventoUno"  
+          type="button" value="Evento 1">
+
+          <!-- evento 2 -->
+          <input class="button_grey" id="eventoDos"  
+          type="button" value="Evento 2">
+
+          <!-- otro tipo de metodo -->
+          <input class="button_grey" id="eventoTres" type="button" value="Evento 3" onclick="cambiarColorDeFondo()">
+         
+
+        </div>
+
+       <div>
+        <p id="parrafoCompleto">Lorem ipsum dolor sit amet <span id="parrafoSpan">consectetur</span> adipisicing elit. At debitis molestiae quo voluptates nostrum. Itaque, nulla. Natus exercitationem delectus similique enim pariatur debitis maiores soluta voluptates dolorem obcaecati? Magni, quaerat.</p>
+       </div>
+
+       <div>
+        <img src="./img/Imagen8.jpg" width="100" alt="mujer" id="coder">
+       </div>
+         <input type="text" name="" id="nombreProducto">
+         <input type="text" name="" id="nombrePersona">
+
+         <form id="formulario">
+            <input type="text">
+            <input type="number">
+            <input type="email">
+            <input class="button_grey" type="submit" value="Send">
+          </form>
+
+          <div>
+            <h4 id="nombre"></h4>
+            <h4 id="email"></h4>
+            <h4 id="edad"></h4>
+          </div>
+    </main>
+
+
+
+    <footer>
+        <p class="p"> <strong>Comision # 59950 / CoderHouse 2024</strong> </p>
+    </footer>
+ <script src="./js/app.js"></script>
+
+ <script>
+
+    function cambiarColorDeFondo() {
+        document.body.style.backgroundColor = 'white';
+        document.getElementById('titulo').style.color = 'blue';
+    }
+</script>
+
+</body>
+
+</html>
